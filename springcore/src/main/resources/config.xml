@@ -12,4 +12,49 @@
         <property name="id" value="20"/>
         <property name="name" value="Tanmay"/>
     </bean>
+
+    <!--  Dependency injection of List datatype  -->
+    <!--  1. List  -->
+    <bean name="hosp" class="com.tanmay.spring.Hospital">
+        <property name="name" value="Vijaya"/>
+        <property name="departments">
+            <list>
+                <value>surgery</value>
+                <value>pharma</value>
+            </list>
+        </property>
+    </bean>
+
+    <!--  2. Set  -->
+    <bean name="dealer" class="com.tanmay.spring.CarDealer">
+        <property name="name" value="Vijaya"/>
+        <property name="models">
+            <set>
+                <value>honda</value>
+                <value>toyotaCus</value>
+            </set>
+        </property>
+    </bean>
+
+    <!--  3. Map  -->
+    <bean name="customer" class="com.tanmay.spring.Customer">
+        <property name="name" value="Vijaya"/>
+        <property name="products">
+            <map>
+                <entry key="product" value="soap"/>
+                <entry key="id" value="10"/>
+            </map>
+        </property>
+    </bean>
+
+    <!--  4. Properties  -->
+    <bean name="lang" class="com.tanmay.spring.Languages">
+        <property name="countriesAndLanguages">
+            <props>
+                <prop key="USA">English</prop>
+                <prop key="INDIA">HINDI</prop>
+            </props>
+        </property>
+    </bean>
+
 </beans>
