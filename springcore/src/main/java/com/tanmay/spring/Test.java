@@ -1,5 +1,11 @@
 package com.tanmay.spring;
 
+import com.tanmay.spring.list.CarDealer;
+import com.tanmay.spring.list.Customer;
+import com.tanmay.spring.list.Hospital;
+import com.tanmay.spring.list.Languages;
+import com.tanmay.spring.primitive.Employee;
+import com.tanmay.spring.reference.Student;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -25,5 +31,8 @@ public class Test {
 
         Languages lang = (Languages) ctx.getBean("lang");
         System.out.println(lang.getCountriesAndLanguages()  );
+
+        Student stu = (Student) ctx.getBean("student");
+        System.out.println(stu.getScores());
     }
 }

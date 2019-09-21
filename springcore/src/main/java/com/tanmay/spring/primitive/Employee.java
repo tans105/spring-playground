@@ -1,4 +1,4 @@
-package com.tanmay.spring;
+package com.tanmay.spring.primitive;
 
 /**
  * @author Tanmay

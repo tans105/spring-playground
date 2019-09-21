@@ -1,4 +1,4 @@
-package com.tanmay.spring;
+package com.tanmay.spring.list;
 
 import java.util.List;
 
