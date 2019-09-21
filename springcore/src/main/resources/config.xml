@@ -8,14 +8,15 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
     <!--  Dependency injection of primitive datatypes  -->
-    <bean name="emp" class="com.tanmay.spring.Employee">
+    <bean name="emp" class="com.tanmay.spring.primitive.Employee">
         <property name="id" value="20"/>
         <property name="name" value="Tanmay"/>
     </bean>
+    <!--    -->
 
     <!--  Dependency injection of List datatype  -->
     <!--  1. List  -->
-    <bean name="hosp" class="com.tanmay.spring.Hospital">
+    <bean name="hosp" class="com.tanmay.spring.list.Hospital">
         <property name="name" value="Vijaya"/>
         <property name="departments">
             <list>
@@ -26,7 +27,7 @@
     </bean>
 
     <!--  2. Set  -->
-    <bean name="dealer" class="com.tanmay.spring.CarDealer">
+    <bean name="dealer" class="com.tanmay.spring.list.CarDealer">
         <property name="name" value="Vijaya"/>
         <property name="models">
             <set>
@@ -37,7 +38,7 @@
     </bean>
 
     <!--  3. Map  -->
-    <bean name="customer" class="com.tanmay.spring.Customer">
+    <bean name="customer" class="com.tanmay.spring.list.Customer">
         <property name="name" value="Vijaya"/>
         <property name="products">
             <map>
@@ -48,7 +49,7 @@
     </bean>
 
     <!--  4. Properties  -->
-    <bean name="lang" class="com.tanmay.spring.Languages">
+    <bean name="lang" class="com.tanmay.spring.list.Languages">
         <property name="countriesAndLanguages">
             <props>
                 <prop key="USA">English</prop>
@@ -56,5 +57,19 @@
             </props>
         </property>
     </bean>
+    <!---->
+
+    <!--  Reference Dependency injection  -->
+    <!--Start with dependency-->
+    <bean name="score" class="com.tanmay.spring.reference.Scores">
+        <property name="maths" value="80"/>
+        <property name="physics" value="90"/>
+        <property name="chemistry" value="78"/>
+    </bean>
+
+    <bean name="student" class="com.tanmay.spring.reference.Student">
+        <property name="scores" ref="score"/>
+    </bean>
+    <!--    -->
 
 </beans>
