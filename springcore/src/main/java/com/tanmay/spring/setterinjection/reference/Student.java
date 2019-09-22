@@ -1,4 +1,4 @@
-package com.tanmay.spring.reference;
+package com.tanmay.spring.setterinjection.reference;
 
 /**
  * @author Tanmay

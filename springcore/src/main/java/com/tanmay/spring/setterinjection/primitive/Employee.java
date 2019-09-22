@@ -1,4 +1,4 @@
-package com.tanmay.spring.primitive;
+package com.tanmay.spring.setterinjection.primitive;
 
 /**
  * @author Tanmay

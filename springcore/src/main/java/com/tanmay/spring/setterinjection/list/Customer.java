@@ -1,4 +1,4 @@
-package com.tanmay.spring.list;
+package com.tanmay.spring.setterinjection.list;
 
 import java.util.Map;
 

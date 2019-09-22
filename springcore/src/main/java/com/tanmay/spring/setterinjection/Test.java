@@ -1,11 +1,11 @@
-package com.tanmay.spring;
+package com.tanmay.spring.setterinjection;
 
-import com.tanmay.spring.list.CarDealer;
-import com.tanmay.spring.list.Customer;
-import com.tanmay.spring.list.Hospital;
-import com.tanmay.spring.list.Languages;
-import com.tanmay.spring.primitive.Employee;
-import com.tanmay.spring.reference.Student;
+import com.tanmay.spring.setterinjection.list.CarDealer;
+import com.tanmay.spring.setterinjection.list.Customer;
+import com.tanmay.spring.setterinjection.list.Hospital;
+import com.tanmay.spring.setterinjection.list.Languages;
+import com.tanmay.spring.setterinjection.primitive.Employee;
+import com.tanmay.spring.setterinjection.reference.Student;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -16,7 +16,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Test {
     public static void main(String[] args) {
         //Create a spring container
-        ApplicationContext ctx = new ClassPathXmlApplicationContext("config.xml");
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("setterinjection/config.xml");
         Employee emp = (Employee) ctx.getBean("emp");
         System.out.println("Employee ID " + emp.getId() + " Employee name " + emp.getName());
 
