@@ -1,6 +1,5 @@
-package com.tanmay.spring.constructorinjection;
+package com.tanmay.spring.autowiring.xml;
 
-import com.tanmay.spring.ambiguity.Ambiguity;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -10,7 +9,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  **/
 public class Test {
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("constructorinjection/config.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("autowiring/xml/config.xml");
         Employee e = (Employee) context.getBean("employee");
         System.out.println(e);
     }
