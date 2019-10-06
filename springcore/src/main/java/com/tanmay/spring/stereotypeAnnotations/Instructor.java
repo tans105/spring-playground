@@ -16,7 +16,17 @@ import java.util.List;
 @Scope(value = "prototype")
 public class Instructor {
 
-    @Value("10")
+    //evaluation an expression
+    //@Value("#{66+44}")
+
+    //evaluate an expression using call a static method
+    //@Value("#{T(java.lang.Math).abs(-99)}")
+
+    //Create a new object, invoking a constructor
+    //@Value("#{new Integer(88)}")
+
+    //Calling a constant
+    @Value("#{T(java.lang.Integer).MIN_VALUE}")
     private String id;
 
     @Value("Tanmay")
