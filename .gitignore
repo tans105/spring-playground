@@ -1,2 +1,4 @@
 springcore/.idea/*
 springcore/target/*
+springjdbc/.idea/*
+springjdbc/target/*
