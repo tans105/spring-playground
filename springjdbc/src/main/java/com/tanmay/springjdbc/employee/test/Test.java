@@ -10,10 +10,16 @@ public class Test {
         ApplicationContext ctx = new ClassPathXmlApplicationContext("config.xml");
         Employee emp = new Employee();
         emp.setFirstName("Manisha");
-        emp.setLastName("Ojha");
+        emp.setLastName("Ojhaa");
         emp.setId(6);
 
         EmployeeDao dao = (EmployeeDao) ctx.getBean("empDao");
+        System.out.println(dao.delete(emp));
         System.out.println(dao.create(emp));
+        System.out.println(dao.update(emp));
+
+        System.out.println(dao.read(6));
+
+        System.out.println(dao.readAll());
     }
 }
