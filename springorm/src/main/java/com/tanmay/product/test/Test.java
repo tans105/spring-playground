@@ -12,9 +12,14 @@ public class Test {
         ProductDao dao = (ProductDao) ctx.getBean("productDao");
         Product prod = new Product();
         prod.setDesc("Tanmay is awesome");
-        prod.setId(1);
+        prod.setId(2);
         prod.setName("Tanmay");
-        prod.setPrice(100);
+//        prod.setPrice(100);
         dao.create(prod);
+//        prod.setPrice(700);
+//        dao.update(prod);
+//        dao.delete(prod);
+        System.out.println(dao.read(1));
+        System.out.println(dao.read());
     }
 }
