@@ -1,0 +1,16 @@
+package com.tanmay.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+class HelloController {
+
+    @RequestMapping("/hello")
+    public ModelAndView hello() {
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("hello");
+        return modelAndView;
+    }
+}
