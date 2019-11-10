@@ -6,3 +6,5 @@ springorm/.idea/*
 springorm/target/*
 springmvc/.idea/*
 springmvc/target/*
+springaop/.idea/*
+springaop/target/*
