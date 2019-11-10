@@ -8,3 +8,5 @@ springmvc/.idea/*
 springmvc/target/*
 springaop/.idea/*
 springaop/target/*
+springjavaconfig/.idea/*
+springjavaconfig/target/*
